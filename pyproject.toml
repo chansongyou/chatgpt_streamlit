@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta:__legacy__"
+
+[project]
+name = "chatgpt-streamlit"
+version = "0.0.1"
+description = "chatgpt using streamlit"
+readme = "README.md"
+requires-python = "==3.10.*"
+authors = [
+    { name = "Chansong You", email = "dbcksthd13@gmail.com" }
+]
+
+dependencies = [
+    "python-dotenv",
+    "streamlit",
+    "streamlit-extras",
+]
+
+[project.urls]
+source = "https://github.com/chansongyou/chatgpt_streamlit"
+
+[tools.setuptools]
+packages = ["src",]
+
+[tool.black]
+line-length = 100
